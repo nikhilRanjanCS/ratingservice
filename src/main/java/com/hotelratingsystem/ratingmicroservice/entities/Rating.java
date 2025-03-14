@@ -8,23 +8,29 @@ import jakarta.persistence.Id;
 @Entity
 public class Rating {
 	
+	
 	@Id
 	@UuidGenerator
 	private String ratingId;
+	
 	
 	private int userId;
 	
 	
 	private String hotelId;
 	
+	
 	private int rating;
+	
+	
+
 
 	public Rating() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	
+
 	public Rating(String ratingId, int userId, String hotelId, int rating) {
 		super();
 		this.ratingId = ratingId;
@@ -34,26 +40,30 @@ public class Rating {
 	}
 
 
-
 	public String getRatingId() {
 		return ratingId;
 	}
+
 
 	public void setRatingId(String ratingId) {
 		this.ratingId = ratingId;
 	}
 
+
 	public int getUserId() {
 		return userId;
 	}
+
 
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 
+
 	public String getHotelId() {
 		return hotelId;
 	}
+
 
 	public void setHotelId(String hotelId) {
 		this.hotelId = hotelId;
@@ -68,7 +78,7 @@ public class Rating {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
-	
-}
 
+		
+}
 
